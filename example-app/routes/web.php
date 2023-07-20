@@ -25,3 +25,6 @@ Route::get('/list',[App\Http\Controllers\LoaiPhongController::class,'index'])->n
 Route::match(['GET','POST'],'/add',[App\Http\Controllers\LoaiPhongController::class,'add'])->name('route_loaiphong_add');
 Route::match(['GET','POST'],'/edit/{id}',[App\Http\Controllers\LoaiPhongController::class,'edit'])->name('route_loaiphong_edit');
 Route::get('/delete/{id}',[App\Http\Controllers\LoaiPhongController::class,'delete'])->name('route_loaiphong_delete');
+
+//phòng 
+Route::get('/phong',[App\Http\Controllers\PhongController::class,'index'])->name('route_phong_index');

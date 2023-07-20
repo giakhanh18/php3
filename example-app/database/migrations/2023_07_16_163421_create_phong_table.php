@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('phong', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('images');
-            $table->string('name'); 
+            $table->string('name');     
+            $table->string('image');
+            $table->string('price'); 
+            $table->string('mota');
+            $table->integer('status')->default(1);
+            $table->string('maloai');
             $table->timestamps();
         });
     }
