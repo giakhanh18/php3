@@ -64,3 +64,28 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Tạo file migration
+php artisan make:migration create_tests_table
+
+php artisan make:request StudentRequest :: lệnh rq
+
+Đồng bộ file migration
+php artisan migrate
+
+Xóa file file migration
+php artisan migrate:rollback
+
+
+Tạo dữ liệu mẫu test
+php artisan db:seed
+
+tạo dữ liệu mẫu và reset toàn bộ 
+php artisan migrate:fresh –seed
+
+Tạo ra từng seed riêng ứng với db 
+php artisan make:seeder UserSeeder (Ví dụ tạo seed dành cho bảng user )
+
+Sử dụng factory để tạo dữ liệu mẫu 
+php artisan make:factory StudentFactory --model=Student
+

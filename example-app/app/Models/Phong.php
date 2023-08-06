@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Phong extends Model
 {
-    use HasFactory;
+    use HasFactory,SoftDeletes;
     protected $table="phong";
-    protected $fillable=['id','name','image','price','mota'];
+    protected $fillable=['id','name','image','price','mota','maloai'];
 }

@@ -4,6 +4,7 @@
         <tr class="primary">
             <td>ID</td>
             <td>Loại Phòng</td>
+            <td>Thao tác</td>
         </tr>
         @foreach($loaiPhongs as $st)
         <tr>

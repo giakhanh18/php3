@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('status')->default(1);
             $table->string('maloai');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
